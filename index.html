@@ -96,6 +96,8 @@
       .dis-img img {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        height: 300px;
+        object-fit: cover;
       }
 
       .courses {
@@ -142,6 +144,15 @@
         background-image: url('https://images.unsplash.com/photo-1682686578842-00ba49b0a71a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8');
         background-size: cover;
         border-radius: 50%;
+      }
+
+      @media (max-width:720px) {
+        .display-section {
+          display: grid;
+          grid-template-columns: 1fr;
+          height: auto;
+          justify-items: center;
+        }
       }
     </style>
 
@@ -190,7 +201,9 @@
 
 
         <div class="dis-img">
-
+          <img
+            src="https://images.unsplash.com/photo-1682695797873-aa4cb6edd613?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+            alt="">
         </div>
 
       </div>
